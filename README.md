@@ -31,13 +31,13 @@ O projeto desenvolvido é capaz de gerar um código na linguagem C da liguagem L
 pip install antlr4-python3-runtime
 ```
 
-4. Execute o comando para gerar os analisadores léxico e sintático em Python.
+4. Execute o comando para gerar os analisadores em Python.
 
 ```Python3
 antlr4 -Dlanguage=Python3 LAGrammar.g4
 ```
 
-3. Execute o analisador sintático com o comando, onde entrada.txt é o arquivo contendo o código fonte em LA a ser analisado e saida.txt é o arquivo de saída onde serão registradas as mensagens de erro.
+3. Execute o gerador de código com o comando, onde entrada.alg é o arquivo contendo o código fonte em LA a ser analisado e saida.alg.c é o arquivo de saída onde estará o código na liguagem C.
 
 ```Python3
 Python3 main.py entrada.alg saida.alg.c
